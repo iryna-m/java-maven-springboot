@@ -1,0 +1,23 @@
+name: java-maven-springboot
+namespace: ""
+cdPipelineName: ""
+cdPipelineStageName: ""
+dnsWildcard: gcp.edp-epam.com
+
+
+database:
+  required: true
+  version: postgres:9.6
+  storageClass: standard
+  capacity: 1Gi
+
+
+
+ingress:
+  required: true
+  site: testira
+  path: /
+
+image:
+  name: java-maven-springboot
+  version: latest
