@@ -2,21 +2,14 @@ name: java-maven-springboot
 namespace: ""
 cdPipelineName: ""
 cdPipelineStageName: ""
-dnsWildcard: gcp.edp-epam.com
-
+dnsWildcard: eks-demo.aws.main.edp.projects.epam.com
 
 database:
-  required: true
-  version: postgres:9.6
-  storageClass: standard
-  capacity: 1Gi
-
+  required: false
 
 
 ingress:
-  required: true
-  site: testira
-  path: /
+  required: false
 
 image:
   name: java-maven-springboot
